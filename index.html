@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SOAP Note</title>
+
+		<!--  Bootstrap	-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row w-100">
+				<div id="soapNote" class="col-6 p-5">
+					<div class="fixed-top ms-5 mt-3">
+						<a class="btn btn-primary" href="../../index.html" role="button"
+							>Go Back</a
+						>
+					</div>
+					<div class="row">
+						<div>
+							<button class="float-end btn btn-secondary show" id="previewBtn">
+								Hide Preview
+							</button>
+						</div>
+					</div>
+					<h1 class="text-center">Logo Here</h1>
+					<p class="text-center">Address</p>
+					<p class="text-center">Contact Information</p>
+					<div class="mb-5">
+						<div class="mb-2">
+							<label for="name" class="w-25">Name:</label
+							><input type="text" name="name" id="" />
+						</div>
+						<div class="mb-2">
+							<label for="sex" class="w-25">Sex:</label
+							><input type="text" name="sex" id="" />
+						</div>
+						<div class="mb-2">
+							<label for="age" class="w-25">Age:</label
+							><input type="number" name="age" id="" />
+						</div>
+						<div>
+							<label for="date" class="w-25">Date:</label
+							><span class="dateField"></span>
+						</div>
+					</div>
+					<fieldset class="my-3">
+						<legend class="px-3 py-2">Subjective</legend>
+						<div class="px-3">
+							<div class="p-5">
+								<textarea
+									name="subjective"
+									id=""
+									rows="10"
+									class="w-100"
+								></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="my-3">
+						<legend class="px-3 py-2">Objective</legend>
+						<div class="px-3">
+							<div class="p-5">
+								<!--  Vital Signs  -->
+								<textarea
+									name="objective"
+									id=""
+									rows="10"
+									class="w-100"
+								></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="my-3">
+						<legend class="px-3 py-2">Assessment</legend>
+						<div class="px-3">
+							<div class="p-5">
+								<textarea
+									name="assessment"
+									id=""
+									rows="10"
+									class="w-100"
+								></textarea>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset class="my-3">
+						<legend class="px-3 py-2">Plan</legend>
+						<div class="px-3">
+							<div class="p-5">
+								<textarea name="plan" id="" rows="10" class="w-100"></textarea>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div id="printNote" class="col-6 p-5 vh-100">
+					<h1 class="text-center">Logo Here</h1>
+					<p class="text-center">Address</p>
+					<p class="text-center">Contact Information</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"
+	></script>
+	<script type="module" src="assets/js/script.js"></script>
+</html>
